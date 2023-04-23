@@ -2,7 +2,7 @@ import React from "react";
 import { buyCake } from "../redux/cake/cakeActions";
 import { connect, useDispatch, useSelector } from "react-redux";
 
-const CakeContainer = () => {
+/*const CakeContainer = () => {
   const dispatch = useDispatch();
   const numberOfCakes = useSelector(state => state.cake.numberOfCakes);
 
@@ -14,9 +14,9 @@ const CakeContainer = () => {
   );
 };
 
-export default CakeContainer;
+export default CakeContainer;*/
 
-/*const CakeContainer = props => {
+const CakeContainer = props => {
   return (
     <div>
       <h4>Number Of Cakes: {props.numberOfCakes}</h4>
@@ -33,4 +33,4 @@ const mapDispatchToProps = dispatch => {
   return { buyCake: () => dispatch(buyCake()) };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(CakeContainer);*/
+export default connect(mapStateToProps, mapDispatchToProps)(CakeContainer);
